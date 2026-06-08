@@ -50,7 +50,7 @@ body {
     linear-gradient(180deg, #071221 0%, #06111f 48%, #08182b 100%);
 }
 
-a { color: inherit; text-decoration: none; }
+a { color: inherit; text-decoration: none; display: block; margin-bottom: 10px;}
 img { display: block; width: 100%; height: auto; }
 button, a { transition: all var(--transition); }
 
