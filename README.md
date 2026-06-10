@@ -11,12 +11,12 @@ Portal de navegação para todos os projetos desenvolvidos na unidade curricular
 ## 🖥️ Sobre o portal
 
 O portal foi concebido para proporcionar uma navegação fluida e sem distrações.  
-**Novidade:** Os projetos alojados no GitHub Pages (`*.github.io`) são agora abertos num **visualizador integrado (iframe)** diretamente no portal, sem necessidade de abrir uma nova aba.  
+Os projetos alojados no GitHub Pages (`*.github.io`) são abertos num **visualizador integrado (iframe)** diretamente no portal.  
 - O projeto é carregado dentro da mesma janela, mantendo o contexto de navegação.  
 - Sempre disponível um botão **"Voltar à página principal"** para fechar o visualizador e regressar à grelha de projetos.  
 - Caso prefira, também pode abrir o projeto numa nova aba através do botão **"Abrir em nova aba"** dentro do modal.  
 
-Projetos externos (itch.io, Base44, etc.) continuam a abrir em nova aba por questões de compatibilidade.
+Projetos externos (itch.io e Base44) abrem apenas em nova aba por questões de compatibilidade.
 
 ---
 
