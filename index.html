@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=10.0" />
   <title>LEM 3 - EMI - ISTEC Porto | Projetos interativos</title>
   <meta name="description" content="Portfólio de edições multimédia interativas. Visualize projetos GitHub Pages integrados via iframe e mantenha o foco na navegação." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -123,15 +123,13 @@
   <div id="iframeModal" class="modal-overlay hidden" aria-hidden="true">
     <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
       <div class="modal-header">
-        <h3 id="modal-title">Visualizar projeto</h3>
         <div class="modal-actions">
           <a href="#" id="modal-external-link" class="modal-external" target="_blank" rel="noopener noreferrer">
-            <span>🔗</span> Abrir em nova aba
+            <span>🔗</span>
           </a>
           <button id="modal-back-btn" class="modal-back" aria-label="Voltar à página principal">
-            ← Voltar à página principal
+            ←
           </button>
-          <button id="modal-close-btn" class="modal-close" aria-label="Fechar visualização">✕</button>
         </div>
       </div>
       <div class="modal-body">
@@ -140,9 +138,6 @@
           <span>A carregar projeto...</span>
         </div>
         <iframe id="modal-iframe" title="Visualização integrada do projeto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-modals"></iframe>
-      </div>
-      <div class="modal-footer-note">
-        <span>← Use ESC para fechar | O projeto é exibido em ambiente seguro</span>
       </div>
     </div>
   </div>

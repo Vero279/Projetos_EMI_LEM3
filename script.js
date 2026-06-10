@@ -2,8 +2,7 @@
 const modal = document.getElementById('iframeModal');
 const modalIframe = document.getElementById('modal-iframe');
 const modalExternalLink = document.getElementById('modal-external-link');
-const modalCloseBtn = document.getElementById('modal-close-btn');
-const modalBackBtn = document.getElementById('modal-back-btn'); // new back button
+const modalBackBtn = document.getElementById('modal-back-btn');
 const iframeLoader = document.getElementById('iframeLoader');
 let currentIframeUrl = '';
 
@@ -41,9 +40,6 @@ function openModalWithUrl(url) {
 }
 
 // Event listeners for modal controls
-if (modalCloseBtn) {
-  modalCloseBtn.addEventListener('click', closeModalAndReturn);
-}
 if (modalBackBtn) {
   modalBackBtn.addEventListener('click', closeModalAndReturn);
 }
@@ -81,5 +77,3 @@ cards.forEach((card) => {
   });
 });
 
-// Optional: if any link accidentally has target="_blank", keep normal behavior.
-// All other external links (itch.io, github repos) work as usual.

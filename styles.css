@@ -50,7 +50,7 @@ body {
     linear-gradient(180deg, #071221 0%, #06111f 48%, #08182b 100%);
 }
 
-a { color: inherit; text-decoration: none; display: block; margin-bottom: 10px;}
+a { color: inherit; text-decoration: none; display: block; margin-bottom: 0px;}
 img { display: block; width: 100%; height: auto; }
 button, a { transition: all var(--transition); }
 
@@ -238,7 +238,7 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(2, 8, 18, 0.92);
+  background: rgba(2, 8, 18, 0.96);
   backdrop-filter: blur(12px);
   display: flex;
   align-items: center;
@@ -253,14 +253,14 @@ h1 {
 
 .modal-container {
   background: linear-gradient(145deg, #0a1424, #051020);
-  border: 1px solid rgba(107, 166, 255, 0.35);
-  border-radius: var(--radius-xl);
-  width: 90vw;
-  max-width: 1300px;
-  height: 85vh;
+  border: none; /*1px solid rgba(107, 166, 255, 0.35);*/
+  border-radius: 0; /*var(--radius-xl);*/
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+  box-shadow: none; /*0 30px 60px rgba(0, 0, 0, 0.6);*/
   animation: modalFadeIn 0.2s ease;
 }
 
@@ -277,11 +277,6 @@ h1 {
   border-bottom: 1px solid rgba(143, 182, 255, 0.2);
   flex-wrap: wrap;
   gap: var(--space-3);
-}
-
-.modal-header h3 {
-  font-size: var(--text-lg);
-  margin: 0;
 }
 
 .modal-actions {
@@ -326,7 +321,9 @@ h1 {
   position: relative;
   background: #030b17;
   border-radius: 0 0 var(--radius-lg) var(--radius-lg);
-  overflow: hidden;
+  /*overflow: hidden;*/
+  overflow: auto;            /* scroll se necessário, mas não interfere no zoom */
+  -webkit-overflow-scrolling: touch;
 }
 
 #modal-iframe {
@@ -334,6 +331,7 @@ h1 {
   height: 100%;
   border: none;
   background: white;
+  touch-action: pan-x pan-y;
 }
 
 .iframe-loader {
@@ -365,14 +363,6 @@ h1 {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
-}
-
-.modal-footer-note {
-  padding: var(--space-3) var(--space-6);
-  border-top: 1px solid rgba(143, 182, 255, 0.12);
-  font-size: var(--text-sm);
-  color: var(--color-text-muted);
-  text-align: right;
 }
 
 @media (min-width: 700px) {
